@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Language learning</title>
+        <link rel="icon" href="img/JS.png">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <div id="level-modal">
+            <p class="text">Choose your difficulty level:</p>
+            <select id="difficulty-select" class="select">
+                <option value="beginner" class="beginner">Beginner</option>
+                <option value="intermediate" class="intermediate">Intermediate</option>
+                <option value="advanced" class="advanced">Advanced</option>
+            </select>
+            <button id="start-game-btn" class="st-btn">Start Game</button>
+        </div>
+        <div class="box">
+            <div id="app">
+                <div id="card-container">
+                    <div id="current-card">
+                        <div class="card" id="word-card"></div>
+                        <input type="text" id="translation-input" placeholder="Enter the translation">
+                    </div>
+                </div>
+                <div id="status">
+                    <div class="step">Step: <span id="current-step">0</span>/<span id="total-steps">0</span></div>
+                    <div class="firstDiv">
+                        <div class="correct">Correct: <span id="correct-count">0</span></div>
+                        <div class="incorrect">Incorrect: <span id="incorrect-count">0</span></div>
+                    </div>
+                    <button id="game-mode-btn" class="game-mode-btn">Choose another level</button>
+                    <div class="level"><span id="proficience-level"></span></div>
+                    <button id="restart-btn" class="restart-btn">Restart</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
